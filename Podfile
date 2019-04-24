@@ -6,5 +6,7 @@ target 'testingPods' do
   use_frameworks!
 
   # Pods for testingPods
+  pod 'RatingControl', '~> 4.0.1'
+
 
 end

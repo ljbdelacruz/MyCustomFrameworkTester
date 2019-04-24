@@ -9,20 +9,20 @@
 import UIKit
 
 class UIScrollViewController: UIViewController {
-    
     @IBOutlet weak var navbar: Toolbar!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.initToolbar();
     }
-    
-    
     func initToolbar(){
-        navbar.title = "UIScroll"
-        navbar.tapLeftButtonAction = {
-            self.dismiss(animated: true, completion: nil)
+        if navbar != nil {
+            
+            navbar.title = "UIScroll"
+            navbar.tapLeftButtonAction = {
+                self.dismiss(animated: true, completion: nil)
+            }
         }
     }
 

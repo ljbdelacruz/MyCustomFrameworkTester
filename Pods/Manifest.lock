@@ -1,3 +1,12 @@
-PODFILE CHECKSUM: 2be6d2a8067b322bd54fe011fe448a376918e47f
+PODS:
+  - RatingControl (4.0.1)
+
+DEPENDENCIES:
+  - RatingControl (~> 4.0.1)
+
+SPEC CHECKSUMS:
+  RatingControl: 25239c8c1c435baf7a510ee3afa7e6aaa1fe7a0d
+
+PODFILE CHECKSUM: dc2abab1ed9dd70b45641d9026539e159f59fd5a
 
 COCOAPODS: 1.4.0

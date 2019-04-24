@@ -19,6 +19,9 @@
 		EEAE3E7B226FFA6A00D8170D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E7A226FFA6A00D8170D /* UIView+.swift */; };
 		EEAE3E83226FFEA200D8170D /* Toolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEAE3E81226FFEA200D8170D /* Toolbar.xib */; };
 		EEAE3E84226FFEA200D8170D /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E82226FFEA200D8170D /* Toolbar.swift */; };
+		EEAE3E89227007B300D8170D /* CustomCell1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E88227007B300D8170D /* CustomCell1TableViewCell.swift */; };
+		EEAE3E8C227007C400D8170D /* CustomCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEAE3E8B227007C400D8170D /* CustomCell1.xib */; };
+		EEAE3E8F22703A6700D8170D /* UITableViewSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAE3E8E22703A6700D8170D /* UITableViewSB.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +53,9 @@
 		EEAE3E7A226FFA6A00D8170D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		EEAE3E81226FFEA200D8170D /* Toolbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Toolbar.xib; path = testingPods/Views/customUI/toolbar/toolbar/Toolbar.xib; sourceTree = SOURCE_ROOT; };
 		EEAE3E82226FFEA200D8170D /* Toolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Toolbar.swift; path = testingPods/Views/customUI/toolbar/toolbar/Toolbar.swift; sourceTree = SOURCE_ROOT; };
+		EEAE3E88227007B300D8170D /* CustomCell1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell1TableViewCell.swift; sourceTree = "<group>"; };
+		EEAE3E8B227007C400D8170D /* CustomCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell1.xib; sourceTree = "<group>"; };
+		EEAE3E8E22703A6700D8170D /* UITableViewSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITableViewSB.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				EEAE3E6D226FF3AA00D8170D /* customUI */,
+				EEAE3E8D22703A5100D8170D /* UITableView */,
 				EEAE3E67226F894C00D8170D /* UIScroll */,
 			);
 			path = Views;
@@ -134,6 +141,7 @@
 		EEAE3E6D226FF3AA00D8170D /* customUI */ = {
 			isa = PBXGroup;
 			children = (
+				EEAE3E852270078300D8170D /* tableView */,
 				EEAE3E79226FFA5C00D8170D /* extensions */,
 				EEAE3E76226FF9CB00D8170D /* Util */,
 				EEAE3E6E226FF3B200D8170D /* toolbar */,
@@ -172,6 +180,39 @@
 				EEAE3E81226FFEA200D8170D /* Toolbar.xib */,
 			);
 			path = toolbar1;
+			sourceTree = "<group>";
+		};
+		EEAE3E852270078300D8170D /* tableView */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3E862270078B00D8170D /* cell */,
+			);
+			path = tableView;
+			sourceTree = "<group>";
+		};
+		EEAE3E862270078B00D8170D /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3E872270079800D8170D /* ccell1 */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		EEAE3E872270079800D8170D /* ccell1 */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3E88227007B300D8170D /* CustomCell1TableViewCell.swift */,
+				EEAE3E8B227007C400D8170D /* CustomCell1.xib */,
+			);
+			path = ccell1;
+			sourceTree = "<group>";
+		};
+		EEAE3E8D22703A5100D8170D /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3E8E22703A6700D8170D /* UITableViewSB.storyboard */,
+			);
+			path = UITableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +277,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEAE3E8F22703A6700D8170D /* UITableViewSB.storyboard in Resources */,
+				EEAE3E8C227007C400D8170D /* CustomCell1.xib in Resources */,
 				EE464A9922524383001DA1B3 /* LaunchScreen.storyboard in Resources */,
 				EE464A9622524383001DA1B3 /* Assets.xcassets in Resources */,
 				EEAE3E83226FFEA200D8170D /* Toolbar.xib in Resources */,
@@ -296,11 +339,14 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-testingPods/Pods-testingPods-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RatingControl/RatingControl.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RatingControl.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -318,6 +364,7 @@
 				EE464A9122524381001DA1B3 /* ViewController.swift in Sources */,
 				EEAE3E6B226F897300D8170D /* UIScrollViewController.swift in Sources */,
 				EEAE3E84226FFEA200D8170D /* Toolbar.swift in Sources */,
+				EEAE3E89227007B300D8170D /* CustomCell1TableViewCell.swift in Sources */,
 				EE464A8F22524381001DA1B3 /* AppDelegate.swift in Sources */,
 				EEAE3E78226FF9DB00D8170D /* ColorUtil.swift in Sources */,
 			);
