@@ -22,6 +22,7 @@
 		EEAE3E89227007B300D8170D /* CustomCell1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E88227007B300D8170D /* CustomCell1TableViewCell.swift */; };
 		EEAE3E8C227007C400D8170D /* CustomCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEAE3E8B227007C400D8170D /* CustomCell1.xib */; };
 		EEAE3E8F22703A6700D8170D /* UITableViewSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAE3E8E22703A6700D8170D /* UITableViewSB.storyboard */; };
+		EEAE3E912270560200D8170D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E902270560200D8170D /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +57,7 @@
 		EEAE3E88227007B300D8170D /* CustomCell1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell1TableViewCell.swift; sourceTree = "<group>"; };
 		EEAE3E8B227007C400D8170D /* CustomCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell1.xib; sourceTree = "<group>"; };
 		EEAE3E8E22703A6700D8170D /* UITableViewSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITableViewSB.storyboard; sourceTree = "<group>"; };
+		EEAE3E902270560200D8170D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				EEAE3E8E22703A6700D8170D /* UITableViewSB.storyboard */,
+				EEAE3E902270560200D8170D /* TableViewController.swift */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				EEAE3E7B226FFA6A00D8170D /* UIView+.swift in Sources */,
 				EE464A9122524381001DA1B3 /* ViewController.swift in Sources */,
 				EEAE3E6B226F897300D8170D /* UIScrollViewController.swift in Sources */,
+				EEAE3E912270560200D8170D /* TableViewController.swift in Sources */,
 				EEAE3E84226FFEA200D8170D /* Toolbar.swift in Sources */,
 				EEAE3E89227007B300D8170D /* CustomCell1TableViewCell.swift in Sources */,
 				EE464A8F22524381001DA1B3 /* AppDelegate.swift in Sources */,
