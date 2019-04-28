@@ -11,7 +11,6 @@ import UIKit
 class TableViewController: UIViewController {
     @IBOutlet weak var myTB: Toolbar!
     @IBOutlet weak var myTV: UITableView!
-    @IBOutlet weak var myCV: UICollectionView!
     
     var items:[UITableViewModelContent]=[];
     override func viewDidLoad() {
@@ -20,6 +19,7 @@ class TableViewController: UIViewController {
         self.setupTableCell();
         self.items=UITableViewModelContent.initStubData();
         self.myTV.reloadData();
+        
     }
     func initToolbar(){
         if myTB != nil {
@@ -38,7 +38,7 @@ class TableViewController: UIViewController {
 
 }
 
-
+//MARK: Tableview handler
 extension TableViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count;
@@ -55,6 +55,5 @@ extension TableViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
-    
-    
 }
+

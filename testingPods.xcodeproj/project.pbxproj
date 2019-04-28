@@ -28,6 +28,9 @@
 		EEAE3E9B2275B50900D8170D /* CustomCell1.xib in CopyFiles */ = {isa = PBXBuildFile; fileRef = EEAE3E8B227007C400D8170D /* CustomCell1.xib */; };
 		EEAE3E9F2275D14E00D8170D /* CollectionCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEAE3E9E2275D14E00D8170D /* CollectionCell1.xib */; };
 		EEAE3EA12275D19000D8170D /* CollectionCell1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3EA02275D19000D8170D /* CollectionCell1CollectionViewCell.swift */; };
+		EEAE3EA42275D3C900D8170D /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3EA32275D3C900D8170D /* UICollectionView+.swift */; };
+		EEAE3EA82275F1BC00D8170D /* UICollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAE3EA72275F1BC00D8170D /* UICollection.storyboard */; };
+		EEAE3EAA2275F1D500D8170D /* UICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3EA92275F1D500D8170D /* UICollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +71,9 @@
 		EEAE3E992275AEA500D8170D /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		EEAE3E9E2275D14E00D8170D /* CollectionCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCell1.xib; sourceTree = "<group>"; };
 		EEAE3EA02275D19000D8170D /* CollectionCell1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell1CollectionViewCell.swift; sourceTree = "<group>"; };
+		EEAE3EA32275D3C900D8170D /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		EEAE3EA72275F1BC00D8170D /* UICollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UICollection.storyboard; sourceTree = "<group>"; };
+		EEAE3EA92275F1D500D8170D /* UICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				EEAE3E6D226FF3AA00D8170D /* customUI */,
+				EEAE3EA62275F19A00D8170D /* UICollectionView */,
 				EEAE3E8D22703A5100D8170D /* UITableView */,
 				EEAE3E67226F894C00D8170D /* UIScroll */,
 			);
@@ -183,6 +190,7 @@
 			children = (
 				EEAE3E7A226FFA6A00D8170D /* UIView+.swift */,
 				EEAE3E992275AEA500D8170D /* UITableView+.swift */,
+				EEAE3EA32275D3C900D8170D /* UICollectionView+.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -264,6 +272,15 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		EEAE3EA62275F19A00D8170D /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3EA72275F1BC00D8170D /* UICollection.storyboard */,
+				EEAE3EA92275F1D500D8170D /* UICollectionViewController.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -333,6 +350,7 @@
 				EE464A9622524383001DA1B3 /* Assets.xcassets in Resources */,
 				EEAE3E83226FFEA200D8170D /* Toolbar.xib in Resources */,
 				EEAE3E69226F895B00D8170D /* UIScrollSB.storyboard in Resources */,
+				EEAE3EA82275F1BC00D8170D /* UICollection.storyboard in Resources */,
 				EE464A9422524381001DA1B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEAE3E7B226FFA6A00D8170D /* UIView+.swift in Sources */,
+				EEAE3EAA2275F1D500D8170D /* UICollectionViewController.swift in Sources */,
 				EEAE3E942274BD7E00D8170D /* UITableViewModelContent.swift in Sources */,
 				EE464A9122524381001DA1B3 /* ViewController.swift in Sources */,
 				EEAE3E9A2275AEA500D8170D /* UITableView+.swift in Sources */,
@@ -462,6 +481,7 @@
 				EEAE3E84226FFEA200D8170D /* Toolbar.swift in Sources */,
 				EEAE3E89227007B300D8170D /* CustomCell1TableViewCell.swift in Sources */,
 				EE464A8F22524381001DA1B3 /* AppDelegate.swift in Sources */,
+				EEAE3EA42275D3C900D8170D /* UICollectionView+.swift in Sources */,
 				EEAE3E78226FF9DB00D8170D /* ColorUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

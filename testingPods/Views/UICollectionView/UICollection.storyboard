@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uiL-cE-sTF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="lgX-Do-IsS">
+            <objects>
+                <viewController id="uiL-cE-sTF" customClass="UICollectionViewController" customModule="testingPods" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DLO-wo-m51">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="My0-PQ-cMM" customClass="Toolbar" customModule="testingPods">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="aio-FK-JLG"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="74G-Ya-DIS">
+                                <rect key="frame" x="0.0" y="68" width="375" height="599"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="599" id="6vp-k9-Od8"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Wu2-JP-trf">
+                                    <size key="itemSize" width="176" height="201"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hPC-Ry-ETb" customClass="CollectionCell1CollectionViewCell" customModule="testingPods" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="201"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="176" height="201"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <size key="customSize" width="176" height="201"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="74G-Ya-DIS" firstAttribute="bottom" secondItem="Hgq-hX-3wM" secondAttribute="bottom" id="5Pq-5c-5By"/>
+                            <constraint firstItem="My0-PQ-cMM" firstAttribute="trailing" secondItem="Hgq-hX-3wM" secondAttribute="trailing" id="7B9-sj-SSl"/>
+                            <constraint firstItem="74G-Ya-DIS" firstAttribute="trailing" secondItem="Hgq-hX-3wM" secondAttribute="trailing" id="Kja-oV-qPn"/>
+                            <constraint firstItem="74G-Ya-DIS" firstAttribute="top" secondItem="Hgq-hX-3wM" secondAttribute="top" constant="48" id="SCh-jk-HqY"/>
+                            <constraint firstItem="My0-PQ-cMM" firstAttribute="leading" secondItem="Hgq-hX-3wM" secondAttribute="leading" id="d4i-oy-Jnv"/>
+                            <constraint firstItem="74G-Ya-DIS" firstAttribute="leading" secondItem="Hgq-hX-3wM" secondAttribute="leading" id="ghR-t2-S3N"/>
+                            <constraint firstItem="My0-PQ-cMM" firstAttribute="top" secondItem="DLO-wo-m51" secondAttribute="top" id="y7G-Wi-pee"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hgq-hX-3wM"/>
+                    </view>
+                    <connections>
+                        <outlet property="myCV" destination="74G-Ya-DIS" id="CND-q4-yvP"/>
+                        <outlet property="myTB" destination="My0-PQ-cMM" id="5Rm-b6-IQx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TFm-GX-6m2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66.400000000000006" y="216.34182908545728"/>
+        </scene>
+    </scenes>
+</document>

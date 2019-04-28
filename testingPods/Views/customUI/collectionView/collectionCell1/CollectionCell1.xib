@@ -19,16 +19,53 @@
                 <rect key="frame" x="0.0" y="0.0" width="303" height="302"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="poster1" translatesAutoresizingMaskIntoConstraints="NO" id="w4m-hf-uJu">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poster1" translatesAutoresizingMaskIntoConstraints="NO" id="w4m-hf-uJu">
                         <rect key="frame" x="0.0" y="0.0" width="303" height="302"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="303" id="VDb-wF-fzc"/>
+                            <constraint firstAttribute="height" constant="302" id="YVR-3r-pFp"/>
+                        </constraints>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzO-ZL-WjX">
+                        <rect key="frame" x="0.0" y="0.0" width="303" height="302"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cr-vX-fBy">
+                                <rect key="frame" x="8" y="143" width="287" height="30"/>
+                                <color key="backgroundColor" red="0.086371965706348419" green="0.030737750232219696" blue="0.022382942959666252" alpha="0.62997645547945202" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9TS-r4-EjL"/>
+                                </constraints>
+                                <state key="normal" title="WATCH NOW">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="0.54762414383561642" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="8cr-vX-fBy" secondAttribute="bottom" constant="129" id="3yn-N1-8YL"/>
+                            <constraint firstItem="8cr-vX-fBy" firstAttribute="leading" secondItem="lzO-ZL-WjX" secondAttribute="leading" constant="8" id="Afm-4M-LFf"/>
+                            <constraint firstAttribute="trailing" secondItem="8cr-vX-fBy" secondAttribute="trailing" constant="8" id="VnB-oY-FRK"/>
+                            <constraint firstItem="8cr-vX-fBy" firstAttribute="top" secondItem="lzO-ZL-WjX" secondAttribute="top" constant="143" id="wEM-bI-bCP"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
+            <constraints>
+                <constraint firstItem="w4m-hf-uJu" firstAttribute="leading" secondItem="MDQ-G3-8Ey" secondAttribute="leading" id="HuJ-PN-gDb"/>
+                <constraint firstItem="w4m-hf-uJu" firstAttribute="top" secondItem="MDQ-G3-8Ey" secondAttribute="top" id="QvM-DY-f2H"/>
+                <constraint firstAttribute="bottom" secondItem="w4m-hf-uJu" secondAttribute="bottom" id="RT0-Mb-pdF"/>
+                <constraint firstAttribute="trailing" secondItem="w4m-hf-uJu" secondAttribute="trailing" id="Uln-M4-lTL"/>
+                <constraint firstItem="lzO-ZL-WjX" firstAttribute="top" secondItem="MDQ-G3-8Ey" secondAttribute="top" id="XFW-k5-d7A"/>
+                <constraint firstItem="lzO-ZL-WjX" firstAttribute="leading" secondItem="MDQ-G3-8Ey" secondAttribute="leading" id="cRL-Ae-Xyr"/>
+                <constraint firstAttribute="trailing" secondItem="lzO-ZL-WjX" secondAttribute="trailing" id="f3i-Ti-8ds"/>
+                <constraint firstAttribute="bottom" secondItem="lzO-ZL-WjX" secondAttribute="bottom" id="mle-Kn-13B"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="LiB-8I-QX3"/>
             <size key="customSize" width="303" height="302"/>
             <connections>
+                <outlet property="animateBG" destination="lzO-ZL-WjX" id="QFF-5B-Esi"/>
                 <outlet property="bgImage" destination="w4m-hf-uJu" id="eK3-iO-edy"/>
+                <outlet property="watchNowButton" destination="8cr-vX-fBy" id="ysK-ap-rla"/>
             </connections>
             <point key="canvasLocation" x="175.19999999999999" y="47.676161919040482"/>
         </collectionViewCell>
