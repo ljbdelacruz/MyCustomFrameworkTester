@@ -12,10 +12,9 @@ class CollectionCell1CollectionViewCell: UICollectionViewCell {
     public static let identifier:String="CollectionCell1"
     public static let nibname:String="CollectionCell1"
     public var showColor:UIColor=ColorUtil.hexStringToUIColor(hex: "#918ea6");
-    @IBOutlet weak var watchNowButton: UIButton!
+    @IBOutlet public weak var watchNowButton: UIButton!
     @IBOutlet weak var bgImage: UIImageView!
     @IBOutlet weak var animateBG: UIView!
-    
     
     override var isSelected: Bool {
         get {
@@ -49,4 +48,6 @@ class CollectionCell1CollectionViewCell: UICollectionViewCell {
             
         });
     }
+    
+    
 }
