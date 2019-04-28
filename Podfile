@@ -6,7 +6,7 @@ target 'testingPods' do
   use_frameworks!
 
   # Pods for testingPods
-  pod 'Cosmos', '~> 19.0'
+  pod 'Cosmos', '17.0.0'
   pod 'Swinject', '~> 2.5.0'
   #2.5.0 for swift 4.2
   pod 'SwinjectStoryboard', '~> 2.1.0'

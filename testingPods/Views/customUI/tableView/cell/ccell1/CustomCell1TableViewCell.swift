@@ -7,15 +7,16 @@
 //
 
 import UIKit
-import RatingControl
-
+import Cosmos
 class CustomCell1TableViewCell: UITableViewCell {
     @IBOutlet weak var viewLabelContainer: UIView!
     static let identifier:String="CustomCell1";
     static let nibname:String="CustomCell1";
     @IBOutlet weak var bgImage: UIImageView!
     @IBOutlet weak var movieLabel: UILabel!
-    @IBOutlet weak var ratings: RatingControl!
+    @IBOutlet weak var ratings: CosmosView!
+    
+    
     @IBOutlet weak var viewContraints: NSLayoutConstraint!
     public var viewPrimaryColor:UIColor=ColorUtil.hexStringToUIColor(hex: "#F3F0F0");
     

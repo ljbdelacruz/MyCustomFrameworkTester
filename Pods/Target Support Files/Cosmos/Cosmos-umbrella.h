@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double RatingControlVersionNumber;
-FOUNDATION_EXPORT const unsigned char RatingControlVersionString[];
+FOUNDATION_EXPORT double CosmosVersionNumber;
+FOUNDATION_EXPORT const unsigned char CosmosVersionString[];
 

@@ -18,6 +18,7 @@ PODS:
   - CHIPageControl/Jaloro (0.1.7)
   - CHIPageControl/Paprika (0.1.7)
   - CHIPageControl/Puya (0.1.7)
+  - Cosmos (17.0.0)
   - Firebase/Core (5.18.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.7.0)
@@ -101,7 +102,6 @@ PODS:
   - nanopb/encode (0.3.901)
   - ObjectMapper (3.4.2)
   - Protobuf (3.7.0)
-  - RatingControl (4.0.1)
   - ReactiveSwift (4.0.0):
     - Result (~> 4.0)
   - Result (4.1.0)
@@ -123,6 +123,7 @@ DEPENDENCIES:
   - AttributedTextView (from `https://github.com/evermeer/AttributedTextView.git`, tag `1.2.3`)
   - CHIPageControl (= 0.1.7)
   - CHIPageControl/Aji (= 0.1.7)
+  - Cosmos (= 17.0.0)
   - Firebase/Core
   - Firebase/Messaging
   - IQKeyboardManagerSwift (from `https://github.com/hackiftekhar/IQKeyboardManager.git`, tag `v6.0.4`)
@@ -131,7 +132,6 @@ DEPENDENCIES:
   - Moya-ObjectMapper/RxSwift (~> 2.8)
   - Moya/ReactiveSwift (~> 12.0.1)
   - Moya/RxSwift (~> 12.0.1)
-  - RatingControl (~> 4.0.1)
   - SwiftEventBus (from `https://github.com/cesarferreira/SwiftEventBus.git`)
   - SwiftKeychainWrapper (~> 3.2.0)
   - SwiftyRSA (~> 1.5.0)
@@ -164,6 +164,7 @@ SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   AttributedTextView: 4c073150101402f0420ac3016ca4610bab156726
   CHIPageControl: bbe1ddd0c688c02ec65b7f7e7d34551a3d16f37c
+  Cosmos: 309e489f21ffc91a1eeecfebef7f817cd2fcfba6
   Firebase: 02f3281965c075426141a0ce1277e9de6649cab9
   FirebaseAnalytics: 23851fe602c872130a2c5c55040b302120346cc2
   FirebaseAnalyticsInterop: efbe45c8385ec626e29f9525e5ebd38520dfb6c1
@@ -179,7 +180,6 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
-  RatingControl: 25239c8c1c435baf7a510ee3afa7e6aaa1fe7a0d
   ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
@@ -191,6 +191,6 @@ SPEC CHECKSUMS:
   SwinjectAutoregistration: f72bf894cbd2ee4a9153e00fa5208e93fb44d283
   SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
 
-PODFILE CHECKSUM: 07f327bf626883f8429841edafc9ddf779d45534
+PODFILE CHECKSUM: b696e53db14f43f8a5e9806abf4b01831e3e059a
 
 COCOAPODS: 1.4.0

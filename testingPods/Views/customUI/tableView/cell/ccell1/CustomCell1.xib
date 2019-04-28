@@ -34,9 +34,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dX2-PO-1sd" customClass="RatingControl" customModule="RatingControl">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dX2-PO-1sd" customClass="CosmosView" customModule="Cosmos">
                                         <rect key="frame" x="0.0" y="20" width="120" height="26"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="26" id="Zwl-sc-o2u"/>
                                             <constraint firstAttribute="width" constant="120" id="dpD-Ia-fXo"/>
@@ -50,6 +49,12 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="rating">
                                                 <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -86,7 +91,7 @@
             <connections>
                 <outlet property="bgImage" destination="5PP-Ay-fXl" id="G4Q-Y4-hx1"/>
                 <outlet property="movieLabel" destination="T1j-fn-8iK" id="Km9-co-j7f"/>
-                <outlet property="ratings" destination="dX2-PO-1sd" id="GZg-Bz-Ey5"/>
+                <outlet property="ratings" destination="dX2-PO-1sd" id="T7U-4G-XDJ"/>
                 <outlet property="viewContraints" destination="dPT-r8-8fJ" id="IRJ-JS-5ez"/>
                 <outlet property="viewLabelContainer" destination="Adx-7p-Tni" id="vqZ-Ou-1Z8"/>
             </connections>

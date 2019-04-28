@@ -26,6 +26,8 @@
 		EEAE3E942274BD7E00D8170D /* UITableViewModelContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E932274BD7E00D8170D /* UITableViewModelContent.swift */; };
 		EEAE3E9A2275AEA500D8170D /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E992275AEA500D8170D /* UITableView+.swift */; };
 		EEAE3E9B2275B50900D8170D /* CustomCell1.xib in CopyFiles */ = {isa = PBXBuildFile; fileRef = EEAE3E8B227007C400D8170D /* CustomCell1.xib */; };
+		EEAE3E9F2275D14E00D8170D /* CollectionCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEAE3E9E2275D14E00D8170D /* CollectionCell1.xib */; };
+		EEAE3EA12275D19000D8170D /* CollectionCell1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3EA02275D19000D8170D /* CollectionCell1CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +66,8 @@
 		EEAE3E902270560200D8170D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		EEAE3E932274BD7E00D8170D /* UITableViewModelContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewModelContent.swift; sourceTree = "<group>"; };
 		EEAE3E992275AEA500D8170D /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		EEAE3E9E2275D14E00D8170D /* CollectionCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCell1.xib; sourceTree = "<group>"; };
+		EEAE3EA02275D19000D8170D /* CollectionCell1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell1CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 		EEAE3E6D226FF3AA00D8170D /* customUI */ = {
 			isa = PBXGroup;
 			children = (
+				EEAE3E9C2275D10800D8170D /* collectionView */,
 				EEAE3E852270078300D8170D /* tableView */,
 				EEAE3E79226FFA5C00D8170D /* extensions */,
 				EEAE3E76226FF9CB00D8170D /* Util */,
@@ -234,6 +239,31 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		EEAE3E9C2275D10800D8170D /* collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3E9D2275D13800D8170D /* collectionCell1 */,
+			);
+			path = collectionView;
+			sourceTree = "<group>";
+		};
+		EEAE3E9D2275D13800D8170D /* collectionCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3EA22275D1DF00D8170D /* model */,
+				EEAE3E9E2275D14E00D8170D /* CollectionCell1.xib */,
+				EEAE3EA02275D19000D8170D /* CollectionCell1CollectionViewCell.swift */,
+			);
+			path = collectionCell1;
+			sourceTree = "<group>";
+		};
+		EEAE3EA22275D1DF00D8170D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -297,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEAE3E8F22703A6700D8170D /* UITableViewSB.storyboard in Resources */,
+				EEAE3E9F2275D14E00D8170D /* CollectionCell1.xib in Resources */,
 				EEAE3E8C227007C400D8170D /* CustomCell1.xib in Resources */,
 				EE464A9922524383001DA1B3 /* LaunchScreen.storyboard in Resources */,
 				EE464A9622524383001DA1B3 /* Assets.xcassets in Resources */,
@@ -362,6 +393,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AttributedTextView/AttributedTextView.framework",
 				"${BUILT_PRODUCTS_DIR}/CHIPageControl/CHIPageControl.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
@@ -369,7 +401,6 @@
 				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/RatingControl/RatingControl.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
@@ -389,6 +420,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AttributedTextView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHIPageControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
@@ -396,7 +428,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RatingControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
@@ -426,6 +457,7 @@
 				EE464A9122524381001DA1B3 /* ViewController.swift in Sources */,
 				EEAE3E9A2275AEA500D8170D /* UITableView+.swift in Sources */,
 				EEAE3E6B226F897300D8170D /* UIScrollViewController.swift in Sources */,
+				EEAE3EA12275D19000D8170D /* CollectionCell1CollectionViewCell.swift in Sources */,
 				EEAE3E912270560200D8170D /* TableViewController.swift in Sources */,
 				EEAE3E84226FFEA200D8170D /* Toolbar.swift in Sources */,
 				EEAE3E89227007B300D8170D /* CustomCell1TableViewCell.swift in Sources */,

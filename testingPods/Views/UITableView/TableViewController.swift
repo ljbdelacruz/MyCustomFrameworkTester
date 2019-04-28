@@ -11,6 +11,8 @@ import UIKit
 class TableViewController: UIViewController {
     @IBOutlet weak var myTB: Toolbar!
     @IBOutlet weak var myTV: UITableView!
+    @IBOutlet weak var myCV: UICollectionView!
+    
     var items:[UITableViewModelContent]=[];
     override func viewDidLoad() {
         super.viewDidLoad()
