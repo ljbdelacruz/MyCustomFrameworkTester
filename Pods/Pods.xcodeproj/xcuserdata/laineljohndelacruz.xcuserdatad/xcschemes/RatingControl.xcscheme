@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "38BF854168BAFA4F8ADD811AEEEA1376"
+               BlueprintIdentifier = "3C132A61B7469351B7E1410D2884FF86"
                BlueprintName = "RatingControl"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "RatingControl.framework">

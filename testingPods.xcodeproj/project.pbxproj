@@ -23,6 +23,9 @@
 		EEAE3E8C227007C400D8170D /* CustomCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEAE3E8B227007C400D8170D /* CustomCell1.xib */; };
 		EEAE3E8F22703A6700D8170D /* UITableViewSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAE3E8E22703A6700D8170D /* UITableViewSB.storyboard */; };
 		EEAE3E912270560200D8170D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E902270560200D8170D /* TableViewController.swift */; };
+		EEAE3E942274BD7E00D8170D /* UITableViewModelContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E932274BD7E00D8170D /* UITableViewModelContent.swift */; };
+		EEAE3E9A2275AEA500D8170D /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E992275AEA500D8170D /* UITableView+.swift */; };
+		EEAE3E9B2275B50900D8170D /* CustomCell1.xib in CopyFiles */ = {isa = PBXBuildFile; fileRef = EEAE3E8B227007C400D8170D /* CustomCell1.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
+				EEAE3E9B2275B50900D8170D /* CustomCell1.xib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +62,8 @@
 		EEAE3E8B227007C400D8170D /* CustomCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell1.xib; sourceTree = "<group>"; };
 		EEAE3E8E22703A6700D8170D /* UITableViewSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITableViewSB.storyboard; sourceTree = "<group>"; };
 		EEAE3E902270560200D8170D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EEAE3E932274BD7E00D8170D /* UITableViewModelContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewModelContent.swift; sourceTree = "<group>"; };
+		EEAE3E992275AEA500D8170D /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				EEAE3E7A226FFA6A00D8170D /* UIView+.swift */,
+				EEAE3E992275AEA500D8170D /* UITableView+.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -203,6 +210,7 @@
 		EEAE3E872270079800D8170D /* ccell1 */ = {
 			isa = PBXGroup;
 			children = (
+				EEAE3E952274BD9900D8170D /* model */,
 				EEAE3E88227007B300D8170D /* CustomCell1TableViewCell.swift */,
 				EEAE3E8B227007C400D8170D /* CustomCell1.xib */,
 			);
@@ -216,6 +224,14 @@
 				EEAE3E902270560200D8170D /* TableViewController.swift */,
 			);
 			path = UITableView;
+			sourceTree = "<group>";
+		};
+		EEAE3E952274BD9900D8170D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3E932274BD7E00D8170D /* UITableViewModelContent.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,13 +359,55 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-testingPods/Pods-testingPods-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AttributedTextView/AttributedTextView.framework",
+				"${BUILT_PRODUCTS_DIR}/CHIPageControl/CHIPageControl.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/RatingControl/RatingControl.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftEventBus/SwiftEventBus.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyRSA/SwiftyRSA.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AttributedTextView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHIPageControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RatingControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftEventBus.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyRSA.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -364,7 +422,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEAE3E7B226FFA6A00D8170D /* UIView+.swift in Sources */,
+				EEAE3E942274BD7E00D8170D /* UITableViewModelContent.swift in Sources */,
 				EE464A9122524381001DA1B3 /* ViewController.swift in Sources */,
+				EEAE3E9A2275AEA500D8170D /* UITableView+.swift in Sources */,
 				EEAE3E6B226F897300D8170D /* UIScrollViewController.swift in Sources */,
 				EEAE3E912270560200D8170D /* TableViewController.swift in Sources */,
 				EEAE3E84226FFEA200D8170D /* Toolbar.swift in Sources */,
